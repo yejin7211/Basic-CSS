@@ -7,6 +7,17 @@ body {
 	font-family: 'DM Sans', sans-serif;
 }
 
+.sr-only {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
 /* Reset CSS */
 a {
 	color: inherit;
@@ -34,8 +45,8 @@ ul,
 ol,
 li {
 	list-style-type: none;
-	padding-left: none;
-	margin-left: none;
+	padding-left: 0;
+	margin-left: 0;
 }
 
 p {
