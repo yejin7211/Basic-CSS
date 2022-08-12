@@ -1,32 +1,12 @@
-* {
-	box-sizing: border-box;
-	border: 0;
-}
-
-body {
-	font-family: 'DM Sans', sans-serif;
-}
-
-.sr-only {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-  z-index: -1;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  visibility: hidden;
-}
-
 /* Reset CSS */
 a {
-	color: inherit;
 	text-decoration: none;
+	color: inherit;
 }
 
-button, 
-input, 
-stextarea {
+button,
+input,
+testarea {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 16px;
 }
@@ -49,9 +29,43 @@ li {
 	margin-left: 0;
 }
 
-p {
-	font-size: 16px;
-	line-height: 24px;
-	color: #2B292D;
-	letter-spacing: -0.01em;
+/* 해당 섹션 화면 중앙으로 정렬 */
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* sr-only */
+.sr-only {
+	position: absolute;
+	z-index: -100;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+/* flex function */
+.card-content {
+	flex-grow: 1;
+}
+
+/* bootstrap in html */
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+	crossorigin="anonymous" />
+
+
+/* 기타 */
+.exception {
+	text-transform: uppercase;
+}
+
+button,
+input,
+textarea {
+	font-family: 'Lato', sans-serif;
 }
